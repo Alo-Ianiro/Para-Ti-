@@ -93,13 +93,13 @@ function drawText() {
   ctx.textAlign = "center";
   ctx.shadowColor = "#ff4d6d";
   ctx.shadowBlur = 30;
-  ctx.fillText("Te amo Giulia", cx, 200);
+  ctx.fillText("Te amo Isa❤️", cx, 200);
   ctx.shadowBlur = 0;
 }
 
 function animate() {
-  ctx.fillStyle = "rgba(5,0,16,0.25)";
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "rgba(5,0,16,0.25)"; 
+  ctx.fillRect(0, 0, canvas.width, canvas.height); 
 
   drawStars();
   drawLetters();
@@ -111,7 +111,7 @@ function animate() {
     t += 0.05;
   }
 
-  pulse += 0.05;
+  pulse += 0.015;
   const scale = 12 + Math.sin(pulse) * 0.8;
 
   ctx.fillStyle = "#ff4d6d";
